@@ -13,7 +13,42 @@ p {
 header h1 {
     font-size: 100px;
      text-align: center;
+  /* 1. Alinhamento: Centraliza o painel horizontalmente na página */
+  margin: 40px auto !important;
+  
+  /* 2. Formato: Fica grande para os lados (retangular) e se adapta a celulares e PCs */
+  width: 90% !important;
+  max-width: 8000px !important; /* Limite para não esticar demais em telas gigantes */
+  min-height: 250px !important; /* Altura mínima confortável */
+  
+  /* 3. Organização interna do texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  /* 4. Cores e Estilo Visual */
+  background-color: #ffffff;
+  color: #1e3a8a;
+  border-radius: 20px;
+
+  /* 5. A moldura de ondas e rendas */
+  background-image: 
+    radial-gradient(circle at 50% 120%, transparent 50%, #bae6fd 55%, transparent 60%),
+    radial-gradient(circle, #bae6fd 2px, transparent 2px);
+  background-size: 100% 100%, 12px 12px;
+  background-repeat: no-repeat, repeat;
+  
+  /* Borda dupla de costura e sombra suave */
+  border: 4px double #93c5fd;
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.06);
 }
+
+  
+
 
 header h2 {
     font-size: 50px;
@@ -22,6 +57,41 @@ header h2 {
 h2 {
     font-size: 40px; 
       text-align: center;
+    
+  /* 1. Alinhamento: Centraliza o painel horizontalmente na página */
+  margin: 40px auto !important;
+  
+  /* 2. Formato: Fica grande para os lados (retangular) e se adapta a celulares e PCs */
+  width: 90% !important;
+  max-width: 700px !important; /* Limite para não esticar demais em telas gigantes */
+  min-height: 250px !important; /* Altura mínima confortável */
+  
+  /* 3. Organização interna do texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  /* 4. Cores e Estilo Visual */
+  background-color: #ffffff;
+  color: #1e3a8a;
+  border-radius: 20px;
+
+  /* 5. A moldura de ondas e rendas */
+  background-image: 
+    radial-gradient(circle at 50% 120%, transparent 50%, 55%, transparent 60%),
+    radial-gradient(circle, #bae6fd 2px, transparent 2px);
+  background-size: 100% 100%, 12px 12px;
+  background-repeat: no-repeat, repeat;
+  
+  /* Borda dupla de costura e sombra suave */
+  border: 4px double #93c5fd;
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.06);
+}
+
 }
 table {
     width :100% ;
@@ -53,51 +123,71 @@ label {
   display: block;
   margin-bottom: 8px; 
 }
-html, body {
+
+body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #f4efe6;
-  background-image: 
-    radial-gradient(circle at 50% 50%, transparent 9px, #e3dac9 10px, #e3dac9 11px, transparent 12px),
-    radial-gradient(circle at 0 0, transparent 9px, #e3dac9 10px, #e3dac9 11px, transparent 12px),
-    radial-gradient(circle at 100% 0, transparent 9px, #e3dac9 10px, #e3dac9 11px, transparent 12px),
-    radial-gradient(circle at 100% 100%, transparent 9px, #e3dac9 10px, #e3dac9 11px, transparent 12px),
-    radial-gradient(circle at 0 100%, transparent 9px, #e3dac9 10px, #e3dac9 11px, transparent 12px),
-    linear-gradient(45deg, transparent 45%, #dfd4be 49%, #dfd4be 51%, transparent 55%),
-    linear-gradient(-45deg, transparent 45%, #dfd4be 49%, #dfd4be 51%, transparent 55%);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 0 0, 0 0;
-  box-shadow: inset 0 0 100px rgba(139, 122, 102, 0.15);
+  background: linear-gradient(-45deg, #d1e7dd, #f8f9fa, #cff4fc, #e0f2f1);
+  background-size: 400% 400%;
+  animation: respiracaoFundo 25s ease-in-out infinite;
 }
 
-html, body {
+body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #f7f1fb;
+  
+  /* 1. Cor de base: Lindo Azul Claro Bebê */
+  background-color: #e0f2fe;
+  
+  /* 2. Trama delicada de fios brancos e brilhantes de macramê */
   background-image: 
-    /* Mini corações decorativos em padrão repetido */
-    radial-gradient(circle at 30% 20%, #ffb6c1 0, #ffb6c1 2px, transparent 3px),
-    radial-gradient(circle at 70% 60%, #ffb6c1 0, #ffb6c1 2px, transparent 3px),
-    /* Ondas estilizadas que lembram as curvas suaves e fofas de um cérebro */
-    radial-gradient(circle at 50% 50%, transparent 12px, #e8daf5 13px, #e8daf5 15px, transparent 16px),
-    radial-gradient(circle at 0 0, transparent 12px, #e8daf5 13px, #e8daf5 15px, transparent 16px),
-    radial-gradient(circle at 100% 100%, transparent 12px, #e8daf5 13px, #e8daf5 15px, transparent 16px);
-  background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px, 40px 40px;
-  background-position: 0 0, 20px 20px, 0 0, 20px 20px, 20px 20px;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.7) 25%, transparent 25%), 
+    linear-gradient(225deg, rgba(255, 255, 255, 0.7) 25%, transparent 25%), 
+    linear-gradient(45deg, rgba(255, 255, 255, 0.7) 25%, transparent 25%), 
+    linear-gradient(315deg, rgba(255, 255, 255, 0.7) 25%, #e0f2fe 25%);
+    
+  /* 3. Ajustes de tamanho e fixação do bordado geométrico */
+  background-size: 40px 40px;
+  background-attachment: fixed;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  /* Costura externa delicada na cor rosa pastel */
-  border: 3px dashed #fcaec3;
+nav{
+  font-size: 40px; 
+      
+    
+  /* 1. Alinhamento: Centraliza o painel horizontalmente na página */
+  margin: 40px auto !important;
+  
+  /* 2. Formato: Fica grande para os lados (retangular) e se adapta a celulares e PCs */
+  width: 90% !important;
+  max-width: 800px !important; /* Limite para não esticar demais em telas gigantes */
+  min-height: 50px !important; /* Altura mínima confortável */
+  
+  /* 3. Organização interna do texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+
+  /* 4. Cores e Estilo Visual */
+  background-color: #ffffff;
+  color: #57617a;
   border-radius: 20px;
-  pointer-events: none;
-  box-shadow: inset 0 0 40px rgba(186, 104, 200, 0.1);
+
+  /* 5. A moldura de ondas e rendas */
+  background-image: 
+    radial-gradient(circle at 50% 120%, transparent 50%, 55%, transparent 60%),
+    radial-gradient(circle, #bae6fd 2px, transparent 2px);
+  background-size: 100% 100%, 12px 12px;
+  background-repeat: no-repeat, repeat;
+  
+  /* Borda dupla de costura e sombra suave */
+  border: 4px double #93c5fd;
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.06);
+
 }
